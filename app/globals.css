@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ocean: #005088;
+  --color-ocean-dark: #003d6b;
+  --color-ocean-light: #e8f4fd;
+  --color-seaweed: #11CAA0;
+  --color-seaweed-dark: #0da882;
+  --color-seaweed-light: #e6faf6;
+  --color-sand: #FAFAF8;
+  --color-sand-dark: #F0EDE8;
+  --font-sans: var(--font-jakarta);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAFAF8;
+  color: #1a2332;
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Intentionally empty — dark mode devre dışı */
+}
